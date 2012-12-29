@@ -1,0 +1,19 @@
+{
+  "name": "packit",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "expect.js": "~0.2.0",
+    "async": "~0.1.22"
+  }
+}
