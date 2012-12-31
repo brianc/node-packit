@@ -2,18 +2,21 @@
   "name": "packit",
   "version": "0.0.0",
   "description": "ERROR: No README.md file found!",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "repository": "",
-  "author": "",
-  "license": "BSD",
+  "repository": "git://github.com/brianc/node-packit",
+  "author": "Brian M. Carlson",
+  "license": "MIT",
   "dependencies": {
     "expect.js": "~0.2.0",
     "async": "~0.1.22"
+  },
+  "devDependencies": {
+    "mocha": "*"
   }
 }
