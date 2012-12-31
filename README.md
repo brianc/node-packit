@@ -1,5 +1,7 @@
 # packit
 
+[![Build Status](https://secure.travis-ci.org/brianc/node-packit.png)](http://travis-ci.org/brianc/node-packit)
+
 ## please note - not yet ready for prime-time
 
 Dead simple asset packaging.
