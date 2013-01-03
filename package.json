@@ -1,7 +1,7 @@
 {
   "name": "packit",
-  "version": "0.0.1",
-  "description": "ERROR: No README.md file found!",
+  "version": "0.0.2",
+  "description": "dead simple, magic free asset packaging",
   "main": "lib/index.js",
   "directories": {
     "test": "test"

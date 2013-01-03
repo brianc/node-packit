@@ -57,7 +57,7 @@ describe('packit', function() {
 
     describe('with conversion', function() {
       it('converts', function(done) {
-        packit.addConverter('.tpl', function(raw, cb) {
+        packit.use('.tpl', function(raw, cb) {
           cb(null, "ok");
         })
 
@@ -83,7 +83,7 @@ describe('packit', function() {
     it('adds', function() {
       var packit = new Packit();
       var origLength = packit.converters.length;
-      packit.addConverter(everythingConverter);
+      packit.use(everythingConverter);
       expect(packit.converters.length).to.be.greaterThan(origLength);
     })
 
@@ -91,7 +91,7 @@ describe('packit', function() {
       var packit = new Packit({
         'test': [asset('two.js')]
       });
-      packit.addConverter(everythingConverter);
+      packit.use(everythingConverter);
       packit.get('test', function(err, text) {
         if(err) return done(err);
         expect(text).to.eql('YES');
@@ -104,14 +104,14 @@ describe('packit', function() {
     var packit = new Packit({
       test: [asset('two.js')]
     });
-    packit.addConverter({
+    packit.use({
       matches: function() { return true; },
       convert: function(text, cb) {
         return cb(null, text.toUpperCase());
       }
     });
 
-    packit.addConverter({
+    packit.use({
       matches: function() { return true; },
       convert: function(text, cb) {
         return cb(null, text.replace('2','3').trim());
