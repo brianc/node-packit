@@ -1,6 +1,6 @@
 {
   "name": "packit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "dead simple, magic free asset packaging",
   "main": "lib/index.js",
   "directories": {

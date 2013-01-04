@@ -126,4 +126,16 @@ describe('packit', function() {
       })
     })
   })
+
+  describe('missing file', function() {
+    it('raises error', function(done) {
+      var packit = new Packit({
+        index: 'alksdjf'
+      })
+      packit.get('index', function(err, cb) {
+        expect(err).to.be.ok()
+        done();
+      })
+    })
+  })
 })
